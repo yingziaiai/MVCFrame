@@ -22,7 +22,7 @@ public void doFilter(ServletRequest request, ServletResponse response,FilterChai
 public void init(FilterConfig arg0){
 	
 }
-private String getActionNameFromURL(HttpServletRequest req){
+public String getActionNameFromURL(HttpServletRequest req){
 	String path=(String)req.getRequestURI();
 	String actionName=path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
 	return actionName;
